@@ -1,0 +1,297 @@
+/* ============================
+   OpenClaw 博客自定义样式
+   ============================ */
+
+/* 字体增强 */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 代码块样式优化 */
+pre {
+  border-radius: 10px !important;
+  border: 1px solid #e8e8e8;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+code {
+  font-family: "JetBrains Mono", "Fira Code", "SF Mono", Consolas, monospace;
+  font-size: 0.88em;
+  border-radius: 4px;
+}
+
+/* 行内代码样式 */
+:not(pre) > code {
+  background: #f5f5f5;
+  color: #c7254e;
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid #e8e8e8;
+}
+
+/* 引用块（blockquote）美化 */
+blockquote {
+  border-left: 4px solid #49b1f5 !important;
+  background: linear-gradient(to right, #f0f9ff, #fff) !important;
+  border-radius: 0 8px 8px 0;
+  padding: 12px 20px !important;
+  margin: 16px 0 !important;
+  color: #555;
+}
+
+blockquote p {
+  margin: 0 !important;
+}
+
+blockquote strong {
+  color: #49b1f5;
+}
+
+/* 标题样式增强 */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+h1 { font-size: 1.8em; border-bottom: none; padding-bottom: 8px; }
+h2 { font-size: 1.5em; border-bottom: 1px solid #e8e8e8; padding-bottom: 6px; }
+h3 { font-size: 1.25em; }
+
+/* 文章标题颜色 */
+#article-container h1,
+#article-container h2 {
+  color: #2c3e50;
+}
+
+/* 文章内容区域优化 */
+#article-container {
+  font-size: 1.05em;
+  line-height: 1.8;
+  word-spacing: 0.05em;
+}
+
+/* 超链接样式 */
+a {
+  color: #49b1f5;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #ff7e79;
+  text-decoration: underline;
+}
+
+/* 标题内的链接 */
+h1 a, h2 a, h3 a, h4 a {
+  color: inherit;
+}
+
+/* 标签样式（tag pill） */
+.tag:not(.tag-active) {
+  background: #f0f9ff !important;
+  color: #49b1f5 !important;
+  border: 1px solid #bde6ff !important;
+  border-radius: 20px !important;
+  transition: all 0.2s !important;
+}
+
+.tag:not(.tag-active):hover {
+  background: #49b1f5 !important;
+  color: #fff !important;
+}
+
+/* 分类样式 */
+.category-bar a {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff !important;
+  border-radius: 20px;
+  padding: 2px 12px;
+  font-size: 0.85em;
+}
+
+/* 文章卡片 hover 效果 */
+.card-list .card {
+  border-radius: 12px !important;
+  transition: transform 0.2s, box-shadow 0.2s !important;
+}
+
+.card-list .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1) !important;
+}
+
+/* 文章信息（meta）样式 */
+.post-meta__date,
+.post-meta__views {
+  font-size: 0.85em;
+  color: #999;
+}
+
+/* 文章列表封面图优化 */
+.card__image {
+  border-radius: 12px 12px 0 0 !important;
+}
+
+/* 分割线 */
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, #49b1f5, #ff7e79, #49b1f5);
+  margin: 30px 0;
+  border-radius: 2px;
+}
+
+/* 表格样式 */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px #e8e8e8;
+}
+
+table thead tr {
+  background: #f8f9fa;
+}
+
+table th {
+  font-weight: 700;
+  text-align: left;
+  padding: 10px 16px;
+  border-bottom: 2px solid #e8e8e8;
+}
+
+table td {
+  padding: 8px 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+table tr:last-child td {
+  border-bottom: none;
+}
+
+table tr:hover {
+  background: #f8f9fa;
+}
+
+/* 图片样式 */
+#article-container img {
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+
+#article-container img:hover {
+  transform: scale(1.01);
+}
+
+/* Footer 优化 */
+.footer {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff !important;
+}
+
+.footer a {
+  color: #fff !important;
+}
+
+/* 导航栏微调 */
+#nav {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.85) !important;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* 首页站点名称下方那条线去掉 */
+#site-title {
+  border-bottom: none !important;
+}
+
+#site-subtitle {
+  border-top: none !important;
+}
+
+/* 滚动条美化 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b8b8b8;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+/* 首页 banner（封面图区域）文字增强 */
+#page-header.full_page {
+  background-attachment: scroll;
+}
+
+/* 文章发布信息中的图标 */
+.post-meta__icon {
+  color: #49b1f5;
+}
+
+/* 归档页面样式优化 */
+.archive-item {
+  padding: 8px 0;
+  border-bottom: 1px dashed #eee;
+  transition: all 0.2s;
+}
+
+.archive-item:hover {
+  padding-left: 8px;
+  border-bottom-color: #49b1f5;
+}
+
+/* 移动端适配微调 */
+@media (max-width: 768px) {
+  #article-container {
+    font-size: 1em;
+  }
+
+  h1 { font-size: 1.5em; }
+  h2 { font-size: 1.25em; }
+
+  blockquote {
+    margin: 12px 0 !important;
+    padding: 10px 14px !important;
+  }
+}
+
+/* 暗色模式适配（可选，博客切换暗色时生效）*/
+[data-theme='dark'] {
+  .tag:not(.tag-active) {
+    background: #2d2d2d !important;
+    color: #a0d8ef !important;
+    border-color: #3d3d3d !important;
+  }
+
+  blockquote {
+    background: linear-gradient(to right, #1a1a2e, #16213e) !important;
+    border-left-color: #4fc3f7 !important;
+    color: #ccc !important;
+  }
+
+  blockquote strong {
+    color: #4fc3f7;
+  }
+
+  :not(pre) > code {
+    background: #2d2d2d;
+    color: #ff9a9e;
+    border-color: #3d3d3d;
+  }
+}
