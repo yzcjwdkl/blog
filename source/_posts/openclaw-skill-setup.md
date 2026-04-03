@@ -20,7 +20,7 @@ description: 记录今天给 OpenClaw 装的几个 skill——安全审查、写
 
 ## 先说说今天装的这几个 Skill
 
-> OpenClaw 有一个 skill 市场叫 **ClawHub**，里面各种各样的小工具。装之前记得先跑一遍安全审查，别啥都往里塞。
+> OpenClaw 有一个 skill 市场叫 **ClawHub**，但是感觉不如 **SkillsMP**社区活跃。装之前记得先跑一遍安全审查，别啥都往里塞。
 
 ### 🔒 skill-vetter — 装 Skill 前的守门员
 
